@@ -1,0 +1,48 @@
+{
+  "name": "telega-ng-server-error",
+  "version": "1.0.0",
+  "description": "server errors handler",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "angular",
+    "error",
+    "directive"
+  ],
+  "author": "vilkoalexander@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-mocks": "^1.5.5",
+    "babel-plugin-ng-annotate": "^0.3.2",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "browserify-shim": "^3.8.12",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-browserify": "^5.0.5",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "phantomjs-prebuilt": "^2.1.7",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.5",
+    "lodash": "^4.13.1"
+  },
+  "browser": {
+    "angular-mocks": "./node_modules/angular-mocks/angular-mocks.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "angular-mocks": {
+      "depends": "angular",
+      "exports": "angular.mock"
+    }
+  }
+}
